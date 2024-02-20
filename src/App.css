@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+  margin: 0px !important;
+  padding-top: 3.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav.navbar {
+  position: fixed;
+  width:100%;
+  top:0;
+  z-index:9999;
+  transition:0.32 ease-in-out;
+}
+
+nav.navbar.scrolled {
+  padding: 0px 0;
+  background-color: #121212;
+}
+
+nav.navbar a.navbar-brand {
+  width:9%;
+  letter-spacing: 0.7px;
+  font-size: 24px;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 400;
+  color:#fff;
+  letter-spacing: 0.5px;
+  padding: 40 0px;
+  font-size:18px;
+  opacity:0.75;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link:active {
+  opacity: 1;
+}
+
+.designation {
+  font-size: 20px;
+}
+
+.wrap {
+  font-size: 25px;
+}
+
+.banner {
+  padding-top: 30px;
+}
+
+.description {
+  font-size: 16px;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-top: 15px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 80px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:#222A35;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #575C66;
+    border-radius: 6px;
   }
-}
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #626970;
+  }
+
+  /*skills*/
+  .skill-bx {
+    background: #151515;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -60px;
+  }
+
+  .skill {
+    padding: 0 0 50px 0;
+    position: relative;
+  }
+
+  .skill-slider {
+    width:80%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+
