@@ -1,47 +1,47 @@
 import React from 'react'
 import { Col, Container, Row, Image } from 'react-bootstrap'
 import sujan from '../07_Sujan.jpg'
-// import { useState } from 'react'
-// import { useEffect } from 'react'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 
 export default function Banner () {
-    // const [loopNum, setLoopNum] = useState(0)
-    // const [isDeleting, setIsDeleting] = useState(false)
-    // const jobRoles = [ "Software Engineer", "Full Stack Developer", "Programmer", "Java Developer"]
-    // const [jobTitle, setJobTitle] = useState("")
-    // const [delta, setDelta] = useState(300 - Math.random() * 100)
-    // const period = 2000
+    const [loopNum, setLoopNum] = useState(0)
+    const [isDeleting, setIsDeleting] = useState(false)
+    const jobRoles = [ "Software Engineer", "Full Stack Developer", "Programmer", "Java Developer"]
+    const [jobTitle, setJobTitle] = useState("")
+    const [delta, setDelta] = useState(300 - Math.random() * 100)
+    const period = 2000
 
-    // useEffect(()=> {
-    //     let ticker = setInterval(() => {
-    //         tick()
-    //     }, delta)
+    useEffect(()=> {
+        let ticker = setInterval(() => {
+            tick()
+        }, delta)
 
-    //     return ()=>{clearInterval(ticker)}
-    // },jobTitle)
+        return ()=>{clearInterval(ticker)}
+    },)
 
-    // const tick = () => {
-    //     let i = loopNum % jobRoles.length;
-    //     let fullText = jobRoles[i];
-    //     let updatedText = isDeleting ? fullText.substring(0, jobTitle.length - 1) : fullText.substring(0, jobTitle.length + 1)
+    const tick = () => {
+        let i = loopNum % jobRoles.length;
+        let fullText = jobRoles[i];
+        let updatedText = isDeleting ? fullText.substring(0, jobTitle.length - 1) : fullText.substring(0, jobTitle.length + 1)
 
-    //     setJobTitle(updatedText)
+        setJobTitle(updatedText)
 
-    //     if (isDeleting) {
-    //         setDelta(prevDelta => prevDelta /2)
-    //     }
+        if (isDeleting) {
+            setDelta(prevDelta => prevDelta /2)
+        }
 
-    //     if (!isDeleting && updatedText === fullText) {
-    //         setIsDeleting(true)
-    //         setDelta(period)
-    //     }
-    //     else if(!isDeleting && updatedText === "") {
-    //         setIsDeleting(false)
-    //         setLoopNum(loopNum +1)
-    //         setDelta(500)
-    //     }
-    // }
+        if (!isDeleting && updatedText === fullText) {
+            setIsDeleting(true)
+            setDelta(period)
+        }
+        else if(!isDeleting && updatedText === "") {
+            setIsDeleting(false)
+            setLoopNum(loopNum +1)
+            setDelta(500)
+        }
+    }
 
 
 

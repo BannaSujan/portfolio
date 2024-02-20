@@ -63,6 +63,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:active {
   padding-top: 30px;
 }
 
+.title {
+  font-size: 55px;
+}
+
 .description {
   font-size: 16px;
   text-align: justify;
@@ -111,4 +115,48 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:active {
     position: relative;
   }
 
+  /*experience*/
 
+  .timeline {
+    position: relative;
+    padding-left: 0px; 
+    list-style: none;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 20px; /* Center line position */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: red;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 11px; /* Aligns dot with the timeline */
+    background: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: 15px; /* Adjust to align the dot vertically with the content */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-content {
+    margin-left: 45px; /* Space between line and card */
+}
+
+.timeline-content .card {
+    border-left: 3px solid rgb(45, 13, 13);
+    background: rgb(201, 201, 209);
+}
+
+.experience {
+  padding-top: 100px;
+}
