@@ -46,7 +46,16 @@ export default function Skills() {
                 <Col>
                 <div className='skill-bx'>
                     <h1 style={{letterSpacing:'1px'}}>Skills</h1>
-                    <Carousel responsive={responsive} infinte={true} className="skill-slider">
+                    <Carousel
+            responsive={responsive}
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={1500}
+            keyBoardControl={true}
+            transitionDuration={1500}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+        >
                         {skillsCards}
                     </Carousel>
                 </div>
