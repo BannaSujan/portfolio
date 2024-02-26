@@ -37,7 +37,6 @@ export default function Navigationbar() {
               onClick={()=> updateActiveLink('home')}>About me</Nav.Link>
             <Nav.Link href="#skills" className={activeLink === "skills" ? 'active navbar-link' : 'navbar-link'} onClick={()=> updateActiveLink('skills')}>Skills</Nav.Link>
             <Nav.Link href="#experience" className={activeLink === "experience" ? 'active navbar-link' : 'navbar-link'} onClick={()=> updateActiveLink('experience')}>Experience</Nav.Link>
-            <NavLink href="#education" className={activeLink === "education" ? 'active navbar-link' : 'navbar-link'} onClick={()=> updateActiveLink('education')}>Education</NavLink>
             <NavLink href="#linkedin">
               <a href="https://www.linkedin.com/in/sai-sujan-banna-850083141/">
               <Image src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" rounded height={30}/>
